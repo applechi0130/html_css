@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-Hant">
+
+    <head>
+        <meta charset="utf-8">
+        <!-- 必須要有  (備註-英文: en) -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>網頁標題</title>
+        <style>
+            h1 {
+                color: aqua;
+            }
+
+            p {
+                color: rgb(17, 207, 96);
+            }
+
+            table {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+
+            table th,
+            table td {
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>內容大標題(一)</h1>
+        <table>
+            <thead>
+                <!-- tr是列 td是欄 th是標題-->
+                <tr>
+                    <th>標題一</th>
+                    <th>標題二</th>
+                    <th>標題三</th>
+                </tr>
+                <tr>
+                    <th>標題四</th>
+                    <th>標題五</th>
+                    <th>標題六</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="2">1</td>
+                    <!-- <td>2</td> 上面合併此處就不需留-->
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>5</td>
+                    <td rowspan="2">6</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>8</td>
+                    <!-- <td>9</td> 被6合併-->
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>tfoot1</td>
+                    <td>tfoot2</td>
+                    <td>tfoot3</td>
+                </tr>
+            </tfoot>
+        </table>
+
+
+        <h1>內容大標題(二)</h1>
+        <span>標籤123</span>
+        <span>456</span>
+        <!-- span是同行接續顯示 -->
+        <div>區塊1</div>
+        <div>區塊2</div>
+
+        <p>段落<br>段落</p>
+        <a href="http://tw.yahoo.com">yahoo網站</a>
+        <br>
+        <a href="https://www.google.com.tw/index.html" target="_blank">google</a>
+        <br>
+        <a href="http://www.books.com.tw" target="_self">博客來</a>
+        <!--target="_blank 開新分頁  -->
+        <!-- target="_self 本頁跳轉-->
+        <br>
+        <a href="./about_us.html">關於我們的頁面</a>
+        <!-- '.'是當下的資料夾或檔案 -->
+
+        <hr>
+        <!-- hr是水平線 -->
+        <!-- 文字大小預設16px -->
+
+        <ol>
+            <!-- 有1.2.3. -->
+            <!-- ol裡只能放li -->
+            <li>第一項</li>
+            <li>第二項</li>
+            <li>第三項 <p>這裡可以放p</p>
+            </li>
+        </ol>
+        <ul>
+            <!-- 只有點點 -->
+            <li>第一項</li>
+            <li>第二項</li>
+            <li>第三項</li>
+        </ul>
+        <img src="./images/IMG_1071.JPG" alt="我家小公主">
+        <img src="https://via.placeholder.com/300x200">
+        <!-- src: 路徑 -->
+        <br>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.792418027187!2d121.47223055362703!3d25.00716859847698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a827497c6d39%3A0x9c1525c974380e6!2z55Kw55CD6LO854mp5Lit5b-DIOaWsOWMl-S4reWSjA!5e0!3m2!1szh-TW!2stw!4v1723397794595!5m2!1szh-TW!2stw"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/oD53EtGEhyk?si=fMK55ZPn-y1gjqAe"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </body>
+
+</html>
